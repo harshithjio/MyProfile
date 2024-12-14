@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandi Harshith - Profile</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@500;600&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        header {
+            background-color: #336699;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .profile-pic {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #336699;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            text-align: center;
+            color: #336699;
+            font-size: 1.8rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            border-bottom: 2px solid #336699;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        .links a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #336699;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .links a:hover {
+            color: #ff6600;
+        }
+        ul {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #336699;
+            color: white;
+            margin-top: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        #currentTime {
+            margin-bottom: 10px;
+            color: #336699;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nandi Harshith</h1>
+        <p>From Visakhapatnam, Andhra Pradesh, India</p>
+    </header>
+    <div class="container">
+        <img src="profile-placeholder.jpg.jpg" alt="Nandi Harshith's Profile Picture" class="profile-pic">
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Hello! I'm Nandi Harshith, a passionate individual from Visakhapatnam, Andhra Pradesh. I am dedicated to exploring innovative solutions in technology, particularly in event service platforms like Fusion Desk. My interests include web development, and creating seamless digital experiences.</p>
+        </div>
+        <div class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Schooling:</strong> De Paul School, Ukkunagaram, Visakhapatnam with passed with percentage of <strong>71.89%</strong> percentile</li>
+                <li><strong>Intermediate:</strong> Sri Chaitanya Junior College, Ukkunagaram passed with percentage <strong>75.1%</strong></li>
+                <li><strong>Degree(Current):</strong> GITAM University, Visakhapatnam, 3rd Year, 6th Semester passed with current CGPA <strong>6.18</strong></li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="https://mail.google.com/mail/harshithnandi2793@gmail.com" target="_blank">harshithnandi2793@gmail.com</a></p>
+            <p>Phone: +91 8309809336</p>
+        </div>
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Project Management</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Fusion Desk:</strong> A platform for connecting users with event service professionals like photographers and videographers.</li>
+                <li>Event Booking Website: Streamlining the process of hiring event professionals.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Social Links</h2>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/nandi-harshith-385a92237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+                <a href="https://github.com/harshithjio" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <p id="currentTime"></p>
+    </div>
+    
+    <footer> 
+        <p>&copy; 2024 Nandi Harshith. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function updateCurrentTime() {
+            const currentTimeElement = document.getElementById('currentTime');
+            const now = new Date();
+            const options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true,
+                timeZone: 'Asia/Kolkata'
+            };
+            currentTimeElement.textContent = `Current Time: ${new Intl.DateTimeFormat('en-US', options).format(now)}`;
+        }
+
+        setInterval(updateCurrentTime, 1000);
+        updateCurrentTime();
+    </script>
+</body>
+</html>
